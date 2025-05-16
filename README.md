@@ -2,7 +2,8 @@
 
 This project segments credit card customers into behavioral groups using unsupervised learning models like KMeans Clustering and PCA for dimensionality reduction and visualization.
 
-![Uploading Credit-Card-Customer-Segmentation.jpg…]()
+![Credit-Card-Customer-Segmentation](https://github.com/user-attachments/assets/1dbcb4f0-3dca-43bb-9f88-d54cf23827b5)
+
 
 
 🎯 Goal
