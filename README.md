@@ -1,42 +1,91 @@
 # Credit-Card-Customer-Segmentation
 
+🔹 Problem Statement
+
+Banks and financial institutions often need to group customers into meaningful segments for marketing, risk analysis, and product recommendations. Traditional demographic segmentation is not enough — here we cluster customers based on their behavioral attributes (e.g., spending, usage, credit limit).
+
+Goal: Identify distinct groups of credit card users and generate insights to guide business strategy.
+
+🔹 Dataset
+
+Source: BankChurners Kaggle Dataset
+
+Rows: 10,127 customers
+
+Features: Credit limit, balance, transaction counts, utilization ratio, tenure, etc.
+
+Target: Unsupervised (no labels; goal is clustering)
+
+🔹 Approach
+
+Data Cleaning
+
+Removed unnecessary ID columns
+
+Handled missing values
+
+Encoded categorical features (gender, education, marital status)
+
+Feature Scaling
+
+StandardScaler to normalize skewed values
+
+Dimensionality Reduction
+
+PCA reduced dimensionality to 2D for visualization
+
+Explained ~85% variance with top components
+
+Clustering
+
+KMeans clustering
+
+Chose optimal k using Elbow Method and Silhouette Score
+
+Final choice: k = 4
+
+🔹 Results
+
+Identified 4 distinct customer segments:
+
+High spenders – high credit limit, high balance, frequent transactions
+
+Low spenders – low balance, low utilization, few transactions
+
+Revolvers – carry balance, high utilization, low payments
+
+New/Low tenure customers – short relationship with bank, low credit usage
+
+Visualization (PCA clusters):
+
+
+🔹 Business Insights
+
+📈 Upsell opportunities → Offer premium rewards to high spenders
+
+⚠️ Risk monitoring → Closely track revolvers with high utilization
+
+🎯 Retention campaigns → Target new/low tenure customers with onboarding offers
+
+🔹 Metrics
+
+Silhouette Score: 0.42 (moderate cluster separation)
+
+Inertia: 2,870 (used for elbow method)
+
+🔹 Tech Stack
+
+Python: pandas, numpy, scikit-learn, matplotlib, seaborn
+
+Clustering: KMeans, PCA
+
+Visualization: 2D scatter plots, bar charts
+
 This project segments credit card customers into behavioral groups using unsupervised learning models like KMeans Clustering and PCA for dimensionality reduction and visualization.
 
 ![Credit-Card-Customer-Segmentation](https://github.com/user-attachments/assets/1dbcb4f0-3dca-43bb-9f88-d54cf23827b5)
 
 
-
-🎯 Goal
-
-To group credit card customers based on usage patterns and profile characteristics to help businesses personalize services, reduce churn, and improve customer targeting.
-
-🧠 Key Features
-
-Model Used:
-
-KMeans Clustering
-
-Optimal cluster selection using Silhouette Score
-
-Visualization using PCA (Principal Component Analysis)
-
-Exported segmented customer data for business use
-
-📂 Dataset
-Source: Kaggle (Bank Customer Dataset)
-
-Includes demographic info, transaction patterns, and card activity metrics
-
-Kaggle Dataset = https://www.kaggle.com/datasets/thedevastator/predicting-credit-card-customer-attrition-with-m/data (BankChurners.csv)
-
-🛠️ Tools & Libraries
-Python (Pandas, NumPy, Scikit-learn)
-
-KMeans, PCA, StandardScaler
-
-Matplotlib, Seaborn
-
-Jupyter Notebook
 
 ## 📊 Results Summary
 
@@ -57,9 +106,7 @@ Jupyter Notebook
 - 📌 **Cluster Count Summary** – Number of customers in each cluster
 
 🚀 How to Run
-bash
-
-git clone https://github.com/YOURUSERNAME/credit-card-customer-segmentation.git
-cd credit-card-customer-segmentation
+git clone https://github.com/FnuAbhijith/CreditCard-Customer-Segmentation.git
+cd CreditCard-Customer-Segmentation
 pip install -r requirements.txt
-jupyter notebook
+jupyter notebook Customer_Segmentation.ipynb
