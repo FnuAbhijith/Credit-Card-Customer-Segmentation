@@ -1,5 +1,8 @@
 # Credit-Card-Customer-Segmentation
 
+![Credit-Card-Customer-Segmentation](https://github.com/user-attachments/assets/1dbcb4f0-3dca-43bb-9f88-d54cf23827b5)
+
+
 🔹 Problem Statement
 
 Banks and financial institutions often need to group customers into meaningful segments for marketing, risk analysis, and product recommendations. Traditional demographic segmentation is not enough — here we cluster customers based on their behavioral attributes (e.g., spending, usage, credit limit).
@@ -82,9 +85,6 @@ Clustering: KMeans, PCA
 Visualization: 2D scatter plots, bar charts
 
 This project segments credit card customers into behavioral groups using unsupervised learning models like KMeans Clustering and PCA for dimensionality reduction and visualization.
-
-![Credit-Card-Customer-Segmentation](https://github.com/user-attachments/assets/1dbcb4f0-3dca-43bb-9f88-d54cf23827b5)
-
 
 
 ## 📊 Results Summary
