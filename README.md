@@ -49,15 +49,15 @@ Goal: Identify distinct groups of credit card users and generate insights to gui
 
 🔹 Results
 
- - Identified 4 distinct customer segments:
+- Identified 4 distinct customer segments:
 
-  1.High spenders – high credit limit, high balance, frequent transactions
+  1. High spenders – high credit limit, high balance, frequent transactions
 
-  2.Low spenders – low balance, low utilization, few transactions
+  2. Low spenders – low balance, low utilization, few transactions
 
-  3.Revolvers – carry balance, high utilization, low payments
+  3. Revolvers – carry balance, high utilization, low payments
 
-  4.New/Low tenure customers – short relationship with bank, low credit usage
+  4. New/Low tenure customers – short relationship with bank, low credit usage
 
 - Visualization (PCA clusters):
 
