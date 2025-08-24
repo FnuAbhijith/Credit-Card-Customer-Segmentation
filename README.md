@@ -11,55 +11,55 @@ Goal: Identify distinct groups of credit card users and generate insights to gui
 
 🔹 Dataset
 
-Source: BankChurners Kaggle Dataset
+- Source: BankChurners Kaggle Dataset
 
-Rows: 10,127 customers
+- Rows: 10,127 customers
 
-Features: Credit limit, balance, transaction counts, utilization ratio, tenure, etc.
+- Features: Credit limit, balance, transaction counts, utilization ratio, tenure, etc.
 
-Target: Unsupervised (no labels; goal is clustering)
+- Target: Unsupervised (no labels; goal is clustering)
 
 🔹 Approach
 
-Data Cleaning
+1. Data Cleaning
 
-Removed unnecessary ID columns
+ -Removed unnecessary ID columns
 
-Handled missing values
+ -Handled missing values
 
-Encoded categorical features (gender, education, marital status)
+ -Encoded categorical features (gender, education, marital status)
 
-Feature Scaling
+2. Feature Scaling
 
-StandardScaler to normalize skewed values
+ -StandardScaler to normalize skewed values
 
-Dimensionality Reduction
+3. Dimensionality Reduction
 
-PCA reduced dimensionality to 2D for visualization
+ -PCA reduced dimensionality to 2D for visualization
 
-Explained ~85% variance with top components
+ -Explained ~85% variance with top components
 
-Clustering
+4. Clustering
 
-KMeans clustering
+ -KMeans clustering
 
-Chose optimal k using Elbow Method and Silhouette Score
+ -Chose optimal k using Elbow Method and Silhouette Score
 
-Final choice: k = 4
+ -Final choice: k = 4
 
 🔹 Results
 
-Identified 4 distinct customer segments:
+ -Identified 4 distinct customer segments:
 
-High spenders – high credit limit, high balance, frequent transactions
+  1.High spenders – high credit limit, high balance, frequent transactions
 
-Low spenders – low balance, low utilization, few transactions
+  2.Low spenders – low balance, low utilization, few transactions
 
-Revolvers – carry balance, high utilization, low payments
+  3.Revolvers – carry balance, high utilization, low payments
 
-New/Low tenure customers – short relationship with bank, low credit usage
+  4.New/Low tenure customers – short relationship with bank, low credit usage
 
-Visualization (PCA clusters):
+- Visualization (PCA clusters):
 
 
 🔹 Business Insights
@@ -72,17 +72,17 @@ Visualization (PCA clusters):
 
 🔹 Metrics
 
-Silhouette Score: 0.42 (moderate cluster separation)
+- Silhouette Score: 0.42 (moderate cluster separation)
 
-Inertia: 2,870 (used for elbow method)
+- Inertia: 2,870 (used for elbow method)
 
 🔹 Tech Stack
 
-Python: pandas, numpy, scikit-learn, matplotlib, seaborn
+- Python: pandas, numpy, scikit-learn, matplotlib, seaborn
 
-Clustering: KMeans, PCA
+- Clustering: KMeans, PCA
 
-Visualization: 2D scatter plots, bar charts
+- Visualization: 2D scatter plots, bar charts
 
 This project segments credit card customers into behavioral groups using unsupervised learning models like KMeans Clustering and PCA for dimensionality reduction and visualization.
 
