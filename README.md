@@ -23,33 +23,33 @@ Goal: Identify distinct groups of credit card users and generate insights to gui
 
 1. Data Cleaning
 
- -Removed unnecessary ID columns
+ - Removed unnecessary ID columns
 
- -Handled missing values
+ - Handled missing values
 
- -Encoded categorical features (gender, education, marital status)
+ - Encoded categorical features (gender, education, marital status)
 
 2. Feature Scaling
 
- -StandardScaler to normalize skewed values
+ - StandardScaler to normalize skewed values
 
 3. Dimensionality Reduction
 
- -PCA reduced dimensionality to 2D for visualization
+ - PCA reduced dimensionality to 2D for visualization
 
- -Explained ~85% variance with top components
+ - Explained ~85% variance with top components
 
 4. Clustering
 
- -KMeans clustering
+ - KMeans clustering
 
- -Chose optimal k using Elbow Method and Silhouette Score
+ - Chose optimal k using Elbow Method and Silhouette Score
 
- -Final choice: k = 4
+ - Final choice: k = 4
 
 🔹 Results
 
- -Identified 4 distinct customer segments:
+ - Identified 4 distinct customer segments:
 
   1.High spenders – high credit limit, high balance, frequent transactions
 
